@@ -178,7 +178,9 @@ For context, refer to the diagram namedgridlines.jpg:
 /* --- MOBILE SECTION --- */
 
 /* change .nav's properties when max-width <= 37.5em (600px) */
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em),
+/*only screen and*/
+(max-width: 48em) {
 	.nav {
 		padding: 0;
 		height: 6.4rem;
@@ -367,6 +369,121 @@ only screen and (max-width: 48em) {
 		}
 	}
 }
+
+/* Start of practice */
+
+/* Desktop version */
+.practice {
+	background-color: beige;
+	padding: 2rem 1.5rem;
+}
+
+.practice img {
+	width: 100%;
+}
+
+.practice h3 {
+	font-size: 2.4rem;
+	font-weight: 700;
+	padding: 2rem 0rem;
+}
+
+.practice-text {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+	margin-top: 2rem;
+}
+
+.practice-name {
+	font-size: 1rem;
+}
+
+.infor {
+	background-color: beige;
+	border-left: 1px solid color(beige);
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 1px;
+	/* margin-top: 2rem; */
+}
+
+.infor-block {
+	padding-left: 1em;
+	display: grid;
+	grid-template-columns: 0.4fr 0.6fr;
+	column-gap: 5%;
+	border-top: 1px solid color black;
+	border-bottom: 1px solid color black;
+	align-items: center;
+	/* border: 1px solid black; */
+}
+
+
+.infor-block img {
+	width: 100%;
+	padding: 1em 0em;
+}
+
+.infor-block h4 {
+	color: black;
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.infor-block p {
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+}
+
+.infor-block:last-child {
+	background-color: lightgrey;
+}
+
+.btn-small:link,
+.btn-small:visited {
+	font-size: 1rem;
+	font-weight: normal;
+	color: #40a9de;
+}
+
+.btn-small:hover,
+.btn-small:active {
+	text-decoration: underline;
+}
+
+.infor-mobile {
+	display: none;
+}
+
+/* Mobile version */
+
+@media only screen and (max-width:37.5em) {
+	.practice {
+		display: none;
+	}
+
+	.infor {
+		display: none;
+	}
+
+	.infor-mobile {
+		display: grid;
+		grid-column: full--start / full--end;
+	}
+
+	.infor-block {
+		grid-template-columns: 1fr;
+		padding: 2rem;
+	}
+
+	.infor-block:last-child {
+		background-color: transparent;
+	}
+}
+
+/* End  of practice */
+
 
 /* Mobile version *
 
