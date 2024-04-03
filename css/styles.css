@@ -324,51 +324,6 @@ only screen and (max-width: 48em) {
 
 /* :::: END OF HEADER :::: */
 
-/* start of footer */
-
-/* Desktop version */
-.footer {
-	display: flex;
-	font-size: 1.2rem;
-	background-color: lightgrey;
-	grid-column: full--start / full--end;
-	padding: 1rem 1.5rem 2rem 1.5rem;
-}
-
-.footer-copyright {
-	margin-right: auto;
-}
-
-.footer-list {
-	list-style: none;
-	display: flex;
-}
-
-.footer-item:not(:last-child) {
-	margin-right: 1.6rem;
-}
-
-.footer-link:link,
-.footer-link:visited {
-	color: red;
-	text-decoration: none;
-}
-
-.footer-link:hover,
-.footer-link:active {
-	text-decoration: underline;
-
-}
-
-@media only screen and (max-width:37.5em) {
-	.footer-list {
-		display: none;
-
-		.footer-copyright {
-			margin: auto;
-		}
-	}
-}
 
 /* Start of practice */
 
@@ -482,11 +437,275 @@ only screen and (max-width: 48em) {
 	}
 }
 
+/* Mobile version */
+
 /* End  of practice */
 
+/* Start of Learning */
+/* Start of Desktop */
+.learning {
+	background-color: lightgrey;
+	padding: 32px 72px 32px 72px;
+	font-size: 1.2rem;
+	border: 1px solid black;
+	grid-column: full--start / full--end;
+}
 
-/* Mobile version *
+.learn-header {
+	color: black;
+	text-align: center;
+	margin-bottom: 32px;
+}
 
+.card h2 {
+	padding-left: 16px;
+	font-size: 1em;
+	margin-bottom: 8px;
+}
+
+.card h1 {
+	padding: 16px;
+	font-size: 1.5em;
+}
+
+.card-all {
+	grid-column: full--start / full--end;
+	grid-template-columns: repeat(3, 1fr);
+	display: grid;
+	color: black;
+}
+
+.card {
+	margin: 0px 16px 16px 16px;
+	background-color: white;
+}
+
+.card img {
+	width: 100%;
+}
+
+.mobile-learn {
+	display: none;
+}
+
+.mobile-learn-text {
+	display: none;
+}
+
+/* End of Desktop */
+
+/* Start of mobile */
+
+@media only screen and (max-width:37.5em) {
+	.learning {
+		display: none;
+		background-color: transparent;
+	}
+
+	.mobile-learn {
+		display: grid;
+		grid-column: full--start / full--end;
+		/* background-color: lightgrey; */
+		/* border: 1px solid black; */
+		padding: 32px 0px 16px 0px;
+	}
+
+	.mobile-learn-text {
+		display: grid;
+		grid-column: full--start / full--end;
+		/* align-items: center; */
+		padding: 16px 16px 32px 16px;
+		/* border: 1px solid lightgrey; */
+	}
+
+	.mobile-learn-text h1 {
+		/* display: grid; */
+		/* grid-column: full--start / full--end; */
+		/* align-items: center; */
+		background-color: lightgrey;
+		/* border: 1px solid black; */
+		padding: 16px 16px 24px 16px;
+		margin-top: 1rem;
+	}
+
+
+}
+
+/* End of mobile */
+/* End of Learning */
+
+/* Start of Thesis exhibit */
+/* start of desktop */
+
+.thesis {
+	/* grid-template-columns: 60% 40%; */
+	/* display: grid; */
+	grid-column: full--start / full--end;
+	padding: 32px 5px 32px 24px;
+	/* border: 1px solid black; */
+	background-color: white;
+}
+
+.thesis-header {
+	color: black;
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.thesis-all {
+	grid-column: full--start / full--end;
+	grid-template-columns: 0.6fr 0.4fr;
+	display: grid;
+}
+
+.thesis-all>.thesis-card>.thesis-video {
+	width: 100%;
+	height: auto;
+}
+
+.thesis-card {
+	padding: 24px;
+}
+
+.thesis-card-side {
+	margin-top: 24px;
+}
+
+.thesis-card p {
+	/* margin-top: 24px; */
+	margin-bottom: 32px;
+	font-size: 1rem;
+}
+
+.thesis-card h4 {
+	margin-top: 24px;
+	margin-bottom: 8px;
+	font-size: 1.5em;
+}
+
+.thesis-card1a,
+.thesis-card1 {
+	/* grid-template-columns: (2, 0.5fr); */
+	/* display: grid; */
+	/* border: 1px solid black; */
+	display: grid;
+	grid-template-columns: .3fr .7fr;
+	/* column-gap: 5%; */
+	/* border-top: 1px solid color black; */
+	/* border-bottom: 1px solid color black; */
+	align-items: center;
+	/* text-indent: center; */
+}
+
+.thesis-card1a {
+	background-color: lightgrey;
+}
+
+.thesis-card1a img,
+.thesis-card1 img {
+	width: 100%;
+	height: auto;
+	padding: 16px;
+}
+
+.thesis-card-side h4 {
+	/* margin-top: 24px; */
+	/* margin-bottom: 8px; */
+	/* display: inline; */
+	/* border: 1px solid black; */
+	font-size: 1.5em;
+}
+
+.thesis-card-side p {
+	color: black;
+	/* text-align: center; */
+	/* margin-bottom: 32px; */
+	font-size: 1em;
+	margin-top: 1em;
+}
+
+.mobile-video {
+	display: none;
+}
+
+/* End of desktop version */
+
+/* Start of Mobile version */
+
+@media only screen and (max-width:37.5em) {
+
+	.thesis-all {
+		display: none;
+	}
+
+	.mobile-video {
+		grid-column: full--start / full--end;
+		/* grid-template-columns: 0.6fr 0.4fr; */
+		display: grid;
+		/* width: 100%; */
+		/* height: auto; */
+		margin-bottom: 16px;
+	}
+
+	.mobile-video video {
+		width: 100%;
+		height: auto;
+	}
+
+	.thesis {
+		border: 1px solid lightgrey;
+	}
+}
+
+/* End of Mobile version */
+
+/* End of Thesis exhibit */
+
+/* start of footer */
+
+/* Desktop version */
+.footer {
+	display: flex;
+	font-size: 1.2rem;
+	background-color: white;
+	grid-column: full--start / full--end;
+	padding: 1rem 1.5rem 2rem 1.5rem;
+}
+
+.footer-copyright {
+	margin-right: auto;
+}
+
+.footer-list {
+	list-style: none;
+	display: flex;
+}
+
+.footer-item:not(:last-child) {
+	margin-right: 1.6rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+	color: grey;
+	text-decoration: none;
+}
+
+.footer-link:hover,
+.footer-link:active {
+	text-decoration: underline;
+
+}
+
+@media only screen and (max-width:37.5em) {
+	.footer-list {
+		display: none;
+
+		.footer-copyright {
+			margin: auto;
+		}
+	}
+}
 
 
 /* end of footer */
