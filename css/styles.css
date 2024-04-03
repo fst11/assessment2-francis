@@ -324,7 +324,7 @@ only screen and (max-width: 48em) {
 
 /* :::: END OF HEADER :::: */
 
-
+/* ----------------------------------------------------------------------- */
 /* Start of practice */
 
 /* Desktop version */
@@ -359,7 +359,6 @@ only screen and (max-width: 48em) {
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);
 	gap: 1px;
-	/* margin-top: 2rem; */
 }
 
 .infor-block {
@@ -370,9 +369,7 @@ only screen and (max-width: 48em) {
 	border-top: 1px solid color black;
 	border-bottom: 1px solid color black;
 	align-items: center;
-	/* border: 1px solid black; */
 }
-
 
 .infor-block img {
 	width: 100%;
@@ -410,7 +407,7 @@ only screen and (max-width: 48em) {
 .infor-mobile {
 	display: none;
 }
-
+/* ----------------------------------------------------------------------- */
 /* Mobile version */
 
 @media only screen and (max-width:37.5em) {
@@ -440,7 +437,7 @@ only screen and (max-width: 48em) {
 /* Mobile version */
 
 /* End  of practice */
-
+/* ----------------------------------------------------------------------- */
 /* Start of Learning */
 /* Start of Desktop */
 .learning {
@@ -493,7 +490,7 @@ only screen and (max-width: 48em) {
 }
 
 /* End of Desktop */
-
+/* ----------------------------------------------------------------------- */
 /* Start of mobile */
 
 @media only screen and (max-width:37.5em) {
@@ -505,44 +502,32 @@ only screen and (max-width: 48em) {
 	.mobile-learn {
 		display: grid;
 		grid-column: full--start / full--end;
-		/* background-color: lightgrey; */
-		/* border: 1px solid black; */
 		padding: 32px 0px 16px 0px;
 	}
 
 	.mobile-learn-text {
 		display: grid;
 		grid-column: full--start / full--end;
-		/* align-items: center; */
 		padding: 16px 16px 32px 16px;
-		/* border: 1px solid lightgrey; */
 	}
 
 	.mobile-learn-text h1 {
-		/* display: grid; */
-		/* grid-column: full--start / full--end; */
-		/* align-items: center; */
 		background-color: lightgrey;
-		/* border: 1px solid black; */
 		padding: 16px 16px 24px 16px;
 		margin-top: 1rem;
 	}
-
 
 }
 
 /* End of mobile */
 /* End of Learning */
-
+/* ----------------------------------------------------------------------- */
 /* Start of Thesis exhibit */
 /* start of desktop */
 
 .thesis {
-	/* grid-template-columns: 60% 40%; */
-	/* display: grid; */
 	grid-column: full--start / full--end;
 	padding: 32px 5px 32px 24px;
-	/* border: 1px solid black; */
 	background-color: white;
 }
 
@@ -572,7 +557,6 @@ only screen and (max-width: 48em) {
 }
 
 .thesis-card p {
-	/* margin-top: 24px; */
 	margin-bottom: 32px;
 	font-size: 1rem;
 }
@@ -585,16 +569,9 @@ only screen and (max-width: 48em) {
 
 .thesis-card1a,
 .thesis-card1 {
-	/* grid-template-columns: (2, 0.5fr); */
-	/* display: grid; */
-	/* border: 1px solid black; */
 	display: grid;
 	grid-template-columns: .3fr .7fr;
-	/* column-gap: 5%; */
-	/* border-top: 1px solid color black; */
-	/* border-bottom: 1px solid color black; */
 	align-items: center;
-	/* text-indent: center; */
 }
 
 .thesis-card1a {
@@ -609,17 +586,11 @@ only screen and (max-width: 48em) {
 }
 
 .thesis-card-side h4 {
-	/* margin-top: 24px; */
-	/* margin-bottom: 8px; */
-	/* display: inline; */
-	/* border: 1px solid black; */
 	font-size: 1.5em;
 }
 
 .thesis-card-side p {
 	color: black;
-	/* text-align: center; */
-	/* margin-bottom: 32px; */
 	font-size: 1em;
 	margin-top: 1em;
 }
@@ -629,7 +600,7 @@ only screen and (max-width: 48em) {
 }
 
 /* End of desktop version */
-
+/* ----------------------------------------------------------------------- */
 /* Start of Mobile version */
 
 @media only screen and (max-width:37.5em) {
@@ -640,10 +611,7 @@ only screen and (max-width: 48em) {
 
 	.mobile-video {
 		grid-column: full--start / full--end;
-		/* grid-template-columns: 0.6fr 0.4fr; */
 		display: grid;
-		/* width: 100%; */
-		/* height: auto; */
 		margin-bottom: 16px;
 	}
 
@@ -661,6 +629,8 @@ only screen and (max-width: 48em) {
 
 /* End of Thesis exhibit */
 
+/* ---------------------------------------------------------------------
+ */
 /* start of footer */
 
 /* Desktop version */
