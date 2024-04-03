@@ -329,7 +329,7 @@ only screen and (max-width: 48em) {
 
 /* Desktop version */
 .practice {
-	background-color: beige;
+	background-color: white;
 	padding: 2rem 1.5rem;
 }
 
@@ -354,7 +354,7 @@ only screen and (max-width: 48em) {
 }
 
 .infor {
-	background-color: beige;
+	background-color: white;
 	border-left: 1px solid color(beige);
 	display: grid;
 	grid-template-rows: repeat(3, 1fr);
