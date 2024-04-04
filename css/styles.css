@@ -621,7 +621,7 @@ only screen and (max-width: 48em) {
 	}
 
 	.thesis {
-		border: 1px solid lightgrey;
+		/* border: 1px solid lightgrey; */
 	}
 }
 
